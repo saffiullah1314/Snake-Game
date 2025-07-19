@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik+Wet+Paint&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("snake.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+
+}
+.score-board{
+    height: 20vmin;
+    width: 30vmin;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    color: rgb(17, 51, 27);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+.cs{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 3vmin;
+}
+
+.container{
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    height: 90vmin;
+    width: 90vmin;
+    border: 3px solid black;
+    background: linear-gradient(rgb(102, 255, 102), yellow);
+    overflow: hidden;
+    display: grid;
+    grid-template: repeat(35 ,1fr)/repeat(35 ,1fr);
+
+}
+
+.msg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.794);
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+.hide{
+    display: none;
+}
+
+.msg span{
+    font-size: 7vmin;
+    margin: 2vmin;
+    color:rgb(15, 61, 29); 
+}
+.resetbutton{
+    height: 6vmin;
+    width: 18vmin;
+    font-size: 3vmin;
+    font-family: 'Poppins', sans-serif ;
+    padding: 0.3vmin;
+    background:linear-gradient(black , grey);
+    color: honeydew;
+    border: none;
+    border-radius: 2vmin;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.resetbutton:hover{
+    transform: scale(1.1);
+}
+.resetbutton:active{
+    transform: scale(0.9);
+}
+.food{
+    background-image: url("images.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40%;
+}
+.snake-body{
+    background-color:#40a505;
+    border-radius: 40%;
+}
+.snake-head{
+    background-image: url("snakehead.jpg");
+    border-radius: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
