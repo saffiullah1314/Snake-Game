@@ -10,7 +10,7 @@ Designed with a **modern and realistic UI**, this project recreates the classic 
 
 ## 🔗 Live Demo
 
-👉 [Play the Game Now](https://saffiullah1314.github.io/Snake-Game-Classic-Arcade-with-Sound-Score-Animations/)  
+👉 [Play the Game Now](https://saffiullah1314.github.io/Snake-Game/)  
 
 
 ---
